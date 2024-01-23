@@ -2,10 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const cors = require('cors');
-const userController = require('./userController');
-const authMiddleware = require('./authMiddleware.js');
-const errorMiddleware = require('./errorMiddleware');
-const loggerMiddleware = require('./loggerMiddleware');
+const userController = require('./Controller/userController.js');
+const authMiddleware = require('./Middlewares/authMiddleware.js');
+const errorMiddleware = require('./Middlewares/errorMiddleware.js');
+const loggerMiddleware = require('./Middlewares/loggerMiddleware.js');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
